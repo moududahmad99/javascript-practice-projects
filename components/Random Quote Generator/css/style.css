@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #394867;
+  text-align: center;
+}
+
+.randomQuoteGen {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #F1F6F9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+}
+
+.randomQuoteGen h1 {
+    margin-bottom: 30px;
+}
+
+#quote {
+  height: 120px;
+  font-size: 24px;
+  color: #2c3333;
+}
+
+#clickOnChange {
+  padding: 10px 20px;
+  background-color: #252b31;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#clickOnChange:hover {
+  background-color: #070707;
+}

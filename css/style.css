@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    background: #2C3333;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#Js-practices {
+    margin-top: 80px;
+}
+
+#Js-practices h3 {
+    font-size: 35px;
+    color: #D6E8DB;
+    margin-bottom: 20px;
+
+}
+
+#Js-practices a {
+    font-family: 'Montserrat';
+    color: aliceblue;
+    font-size: 25px;
+    text-decoration: none;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+#Js-practices a:hover {
+    color: #d3d9dd;
+}
