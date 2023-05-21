@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+body {
+  background: #526d82;
+  z-index: -99;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  background: #c4dfdf;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.countdown-timer h1 {
+  margin: 180px 0 40px 0;
+  padding-top: 30px;
+  color: #526d82;
+}
+
+#timer {
+  color: rgb(80, 82, 80);
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 40px;
+}
