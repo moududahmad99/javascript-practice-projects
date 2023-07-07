@@ -20,4 +20,10 @@ setInterval(function () {
         timer.innerHTML = 'Countdown Finished!'
     }
 
+    
+    
 }, 1000)
+
+function goBack() {
+    history.back()
+}

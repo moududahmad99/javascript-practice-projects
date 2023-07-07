@@ -13,6 +13,10 @@ function generatingQuotes () {
     document.getElementById('quote').textContent = quotes[randomIndex]
 }
 
+function goBack() {
+    history.back()
+}
+
 const quoteUpdate = document.getElementById('clickOnChange');
 quoteUpdate.addEventListener('click', generatingQuotes)
 

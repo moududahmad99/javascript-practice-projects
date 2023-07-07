@@ -1,38 +1,211 @@
 * {
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat';
-    background: #2C3333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-    width: 1320px;
-    margin: 0 auto;
+.projects-link-wrapper {
+  background: rgba(41, 41, 41, 0.73);
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px;
 }
 
-#Js-practices {
-    margin-top: 80px;
+.projects-link-wrapper h3 {
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: 120px;
+  left: 585px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 99;
+  width: 500px;
+  padding: 20px;
+  text-decoration: underline;
+  background: #ffffff;
 }
 
-#Js-practices h3 {
-    font-size: 35px;
-    color: #D6E8DB;
-    margin-bottom: 20px;
-
+.projects-link-wrapper h3::after {
+  content: "";
+  position: absolute;
+  left: 170px;
+  top: 10px;
+  height: 100px;
+  width: 400px;
+  background: #1b1b1b8a;
+  z-index: -2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-#Js-practices a {
-    font-family: 'Montserrat';
-    color: aliceblue;
-    font-size: 25px;
-    text-decoration: none;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
+.projects-link-wrapper ul h4 {
+  font-family: "Inter";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #d9d9d9;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 2px 2px 4px rgba(255, 226, 61, 0.884);
+  position: relative;
+  z-index: 99;
+  width: 200px;
+  padding: 20px;
+  text-decoration: underline;
+  background: #050505be;
+  letter-spacing: 1.3px;
 }
 
-#Js-practices a:hover {
-    color: #d3d9dd;
+.projects-link-wrapper ul li {
+  list-style: none;
+  margin: 25px 0;
+  z-index: 1;
+  margin-left: 200px;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+}
+
+.projects-link-wrapper ul li a {
+  text-decoration: none;
+  color: #424242;
+  background: #d9d9d9;
+  padding: 14px 20px;
+  align-items: center;
+  font-size: 16px;
+  display: flex;
+  width: 225px;
+  justify-content: center;
+  font-family: "Inter";
+  text-transform: uppercase;
+  /* clip-path: polygon(
+  100% 0,
+  15px 0,
+  0 15px,
+  0 100%,
+  calc(100% - 15px) 100%,
+  100% calc(100% - 15px)
+); */
+  clip-path: polygon(
+    100% 0,
+    calc(100% - 15px) 0,
+    100% 15px,
+    100% 100%,
+    15px 100%,
+    0 calc(100% - 15px),
+    0 0,
+    100% 0
+  );
+}
+
+.projects-link-wrapper ul li a i {
+  display: none;
+}
+
+.projects-link-wrapper ul li a:hover i {
+  display: block;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.projects-link-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 587px;
+  width: 587px;
+  background: #1b1b1bd8;
+  left: 51px;
+  top: 124px;
+  z-index: -1;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  clip-path: polygon(80% 0, 90% 10%, 100% 20%, 100% 100%, 0 100%, 0% 60%, 0 0);
+}
+
+.projects-link-wrapper::before {
+  position: absolute;
+  content: "";
+  height: 800px;
+  width: 400px;
+  background: #00000086;
+  left: -15px;
+  top: -15px;
+}
+
+@keyframes slideIn {
+  0% {
+    left: 180px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.projects-link-wrapper h3 {
+  position: relative;
+}
+
+.projects-link-wrapper h3::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 15px;
+  height: 80px;
+  width: 400px;
+  background: #151616b4;
+  z-index: -2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  animation: slideIn 1s ease-in-out alternate;
+  -webkit-animation: slideIn 1s ease-in-out alternate;
+}
+
+/* Intermediate Prjects */
+
+.intermediate-projects {
+  position: absolute;
+  right: 40px;
+  bottom: 23px;
+}
+
+.intermediate-projects::after {
+  content: "";
+  position: absolute;
+  padding: 0px;
+  background: #000;
+  height: 440px;
+  width: 489px;
+  z-index: -2;
+  left: 0;
+  top: 0px;
+}
+
+.intermediate-projects h4 {
+  font-family: "Inter";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #d9d9d9;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 2px 2px 2px rgba(236, 13, 13, 0.6);
+  position: relative;
+  z-index: 99;
+  width: 200px;
+  padding: 20px;
+  background: #050505be;
+  text-decoration: underline;
+  letter-spacing: 1.3px;
 }

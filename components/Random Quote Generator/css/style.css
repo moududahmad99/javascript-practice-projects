@@ -14,14 +14,14 @@ body {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  background: #F1F6F9;
+  background: #f1f6f9;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 120px;
+  margin-top: 220px;
 }
 
 .randomQuoteGen h1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #quote {
@@ -42,4 +42,26 @@ body {
 
 #clickOnChange:hover {
   background-color: #070707;
+}
+
+/* Go Back */
+
+.goBack {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  color: #d8dff5;
+  border: 5px solid #e3eaff;
+  cursor: pointer;
+  padding: 10px 18px 10px 16px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
