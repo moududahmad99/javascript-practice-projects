@@ -3,8 +3,12 @@
   box-sizing: border-box;
 }
 
+#background-js {
+  background: #000000ce;
+}
+
 .projects-link-wrapper {
-  background: rgba(41, 41, 41, 0.73);
+  background: #f9f3ffc9;
   margin-top: 40px !important;
   margin-bottom: 40px !important;
   width: 1320px;
@@ -13,22 +17,49 @@
   padding: 40px;
 }
 
+.projects-link-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 587px;
+  width: 587px;
+  background: #ffffff;
+  left: 51px;
+  top: 124px;
+  z-index: -1;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  clip-path: polygon(80% 0, 90% 10%, 100% 20%, 100% 100%, 0 100%, 0% 60%, 0 0);
+}
+
+.projects-link-wrapper::before {
+  position: absolute;
+  content: "";
+  height: 800px;
+  width: 400px;
+  background: #d2e9e9ce;
+  left: -15px;
+  top: -15px;
+}
+
 .projects-link-wrapper h3 {
   font-family: "Montserrat";
   letter-spacing: 1px;
   font-size: 26px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #e4d7d7;
   position: absolute;
   top: 120px;
   left: 585px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 4px rgba(233, 230, 230, 0.6);
   position: relative;
   z-index: 99;
   width: 500px;
   padding: 20px;
   text-decoration: underline;
-  background: #ffffff;
+  background: #424242;
 }
 
 .projects-link-wrapper h3::after {
@@ -38,26 +69,41 @@
   top: 10px;
   height: 100px;
   width: 400px;
-  background: #1b1b1b8a;
+  background: rgb(0 0 0 / 49%);
   z-index: -2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
+.projects-link-wrapper h3 {
+  position: relative;
+}
+
+.projects-link-wrapper h3::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 15px;
+  height: 80px;
+  width: 400px;
+  background: #151616b4;
+  z-index: -2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  animation: slideIn 1s ease-in-out alternate;
+  -webkit-animation: slideIn 1s ease-in-out alternate;
+}
+
 .projects-link-wrapper ul h4 {
+  position: relative;
   font-family: "Inter";
   font-size: 18px;
   text-transform: uppercase;
-  color: #d9d9d9;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  color: #424242;
   box-shadow: 2px 2px 4px rgba(255, 226, 61, 0.884);
-  position: relative;
   z-index: 99;
   width: 200px;
   padding: 20px;
   text-decoration: underline;
-  background: #050505be;
+  background: #ffffff;
   letter-spacing: 1.3px;
 }
 
@@ -75,8 +121,8 @@
 
 .projects-link-wrapper ul li a {
   text-decoration: none;
-  color: #424242;
-  background: #d9d9d9;
+  color: #e3f4f4;
+  background: #2b2b2b;
   padding: 14px 20px;
   align-items: center;
   font-size: 16px;
@@ -85,14 +131,6 @@
   justify-content: center;
   font-family: "Inter";
   text-transform: uppercase;
-  /* clip-path: polygon(
-  100% 0,
-  15px 0,
-  0 15px,
-  0 100%,
-  calc(100% - 15px) 100%,
-  100% calc(100% - 15px)
-); */
   clip-path: polygon(
     100% 0,
     calc(100% - 15px) 0,
@@ -118,33 +156,6 @@
   -o-transition: 0.4s;
 }
 
-.projects-link-wrapper::after {
-  content: "";
-  position: absolute;
-  height: 587px;
-  width: 587px;
-  background: #1b1b1bd8;
-  left: 51px;
-  top: 124px;
-  z-index: -1;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  clip-path: polygon(80% 0, 90% 10%, 100% 20%, 100% 100%, 0 100%, 0% 60%, 0 0);
-}
-
-.projects-link-wrapper::before {
-  position: absolute;
-  content: "";
-  height: 800px;
-  width: 400px;
-  background: #00000086;
-  left: -15px;
-  top: -15px;
-}
-
 @keyframes slideIn {
   0% {
     left: 180px;
@@ -152,24 +163,6 @@
   100% {
     left: -20px;
   }
-}
-
-.projects-link-wrapper h3 {
-  position: relative;
-}
-
-.projects-link-wrapper h3::before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 15px;
-  height: 80px;
-  width: 400px;
-  background: #151616b4;
-  z-index: -2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  animation: slideIn 1s ease-in-out alternate;
-  -webkit-animation: slideIn 1s ease-in-out alternate;
 }
 
 /* Intermediate Prjects */
@@ -184,7 +177,7 @@
   content: "";
   position: absolute;
   padding: 0px;
-  background: #000;
+  background: rgba(210, 233, 233, 0.808);
   height: 440px;
   width: 489px;
   z-index: -2;
@@ -196,7 +189,7 @@
   font-family: "Inter";
   font-size: 18px;
   text-transform: uppercase;
-  color: #d9d9d9;
+  color: #030303;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -205,7 +198,7 @@
   z-index: 99;
   width: 200px;
   padding: 20px;
-  background: #050505be;
+  background: #b3b3b3ce;
   text-decoration: underline;
   letter-spacing: 1.3px;
 }

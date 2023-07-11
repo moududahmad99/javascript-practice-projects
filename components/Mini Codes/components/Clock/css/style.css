@@ -1,0 +1,30 @@
+#clock {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+
+.goBack {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  color: #4b4e57;
+  border: 5px solid #4b4e57;
+  cursor: pointer;
+  padding: 10px 18px 10px 16px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.goBack:hover {
+  color: #4b4e57;
+}

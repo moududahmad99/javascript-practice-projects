@@ -1,0 +1,11 @@
+# Ignore temporary files
+*.tmp
+*.bak
+
+# Ignore build artifacts
+/build/
+/components/Weather App
+
+# Ignore sensitive information
+secrets.txt
+credentials.json

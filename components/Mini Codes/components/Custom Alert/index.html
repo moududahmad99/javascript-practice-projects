@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Code => Custom Alert</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="custom-modal">
+        <div class="custom-modal-content">
+            <p>This is a customized alert message!</p>
+            <button class="close-button">Close</button>
+        </div>
+    </div>
+
+    <a href="#" class="goBack" onclick="goBack()"><i class="fas fa-backward"></i></a>
+
+    <script>
+
+        function goBack() {
+            history.back()
+        }
+
+        const customModal = document.querySelector('.custom-modal');
+        const closeButton = document.querySelector('.close-button');
+
+        closeButton.addEventListener('click', function () {
+            customModal.style.display = 'none';
+        });
+
+        customModal.style.display = 'block';
+    </script>
+</body>
+
+</html>
