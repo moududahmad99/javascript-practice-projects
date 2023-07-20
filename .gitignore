@@ -5,6 +5,9 @@
 # Ignore build artifacts
 /build/
 /components/Weather App
+/components/Recipe Search App
+/components/User Authentication
+/components/Weather Application
 
 # Ignore sensitive information
 secrets.txt
