@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #a1ccd1;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+}
+
+.container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.heading {
+  font-size: 36px;
+  color: rgb(222, 245, 245);
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.heading-wrapper {
+  background: #32363a;
+  padding: 10px 0;
+}
+
+.search-box {
+  background: #67717a;
+  padding: 20px 0;
+  width: 650px;
+  margin: 20px auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.weather-info {
+  margin: 10px 0;
+  background: #eeeded;
+  padding: 20px;
+  height: 660px;
+}
+
+.weather-icon {
+  margin-bottom: 20px;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchInput {
+  text-transform: capitalize;
+  padding: 0 7px;
+  outline: none;
+  border: none;
+  width: 240px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+#searchButton,
+#useLocationButton {
+  height: 40px;
+  width: 160px;
+  background: aliceblue;
+  color: #001c30;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin: 0 4px;
+}
+
+/* Go Back */
+
+.goBack {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  color: #424242;
+  border: 5px solid #424242;
+  cursor: pointer;
+  padding: 7px 18px 7px 16px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.goBack:hover {
+  color: #424242;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading-wrapper">
+            <h1 class="heading">Weather App</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Enter city name">
+                <button id="searchButton">Search</button>
+                <button id="useLocationButton">Use My Location</button>
+            </div>
+        </div>
+        <div class="weather-info">
+            <p id="cityName"></p>
+            <p id="temperature"></p>
+            <p id="weatherDescription"></p>
+            <p id="localTime"></p>
+            <i id="weatherIcon" class="weather-icon"></i>
+            <div id="map" class="map"></div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
